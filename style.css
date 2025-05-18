@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+#menu-button {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#clicker-button {
+  font-size: 28px;
+  padding: 30px 60px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+#clicker-button:active {
+  transform: scale(0.9);
+}
+
+#upgrade-menu, #side-menu {
+  position: absolute;
+  top: 60px;
+  left: 10%;
+  width: 80%;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.9);
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-content button {
+  margin: 10px;
+  padding: 15px;
+  font-size: 16px;
+}
+
+#click-animation {
+  position: absolute;
+  color: green;
+  font-size: 24px;
+  pointer-events: none;
+}
+
+#cps {
+  margin-top: 10px;
+  font-size: 18px;
+}
